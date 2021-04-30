@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-echo "Hiiiiiiiiiiii"
+echo "Welcome to flipCoinCombination"
