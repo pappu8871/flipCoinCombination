@@ -40,12 +40,33 @@ do
   let "throw += 1"
 
 #define percentage
-    percent=(heads/10)*100
+  
+Result=$((RANDOM%2))
 
-     $percentage=(percent)
+flipcoin(){
 
+for i in range(num of flips)
+if [[ ${Result} -eq 0 ]];
+then
+    echo "Head"
+   Heads+=1
+HeadPercent =(head/num of flips)*100           
 
+     elif [[${Result} -eq 1 ]];
+then
+     echo "Tails"
+       Tails+=1          
+     TailPercent=(tail/num of flips)*100
+fi
+ done
+}
 done
- echo "$percentage"
+
+echo "enter a range"
+read m
+
+echo "$HeadPercent"
+echo "$TailPercent"
+
 print_result
 exit 0
